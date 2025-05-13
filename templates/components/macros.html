@@ -1,0 +1,94 @@
+{% macro project_card(image_url, title, description) %}
+<div class="project-card">
+    <div class="project-image">
+        <img src="{{ image_url }}" alt="{{ title }}">
+    </div>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+</div>
+{% endmacro %}
+
+{% macro partnership_item(image_url, title, description, link_url, link_text="Learn more") %}
+<div class="partnership-item">
+    <div class="partnership-image">
+        <img src="{{ image_url }}" alt="{{ title }}">
+    </div>
+    <h3>{{ title }}</h3>
+    <p>{{ description }}</p>
+    <a href="{{ link_url }}" class="btn">{{ link_text }}</a>
+</div>
+{% endmacro %}
+
+{% macro testimonial_card(quote, avatar_url, name, description) %}
+<div class="testimonial-card">
+    <p class="testimonial-quote">"{{ quote }}"</p>
+    <div class="testimonial-author">
+        <div class="testimonial-avatar">
+            <img src="{{ avatar_url }}" alt="{{ name }}">
+        </div>
+        <div class="testimonial-info">
+            <h4 class="testimonial-name">{{ name }}</h4>
+            <p class="testimonial-description">{{ description }}</p>
+        </div>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro promotional_card(image_url, title, description) %}
+<div class="promo-card">
+    <div class="promo-image">
+        <img src="{{ image_url }}" alt="{{ title }}">
+    </div>
+    <div class="promo-content">
+        <h3>{{ title }}</h3>
+        <p>{{ description }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro faq_item(question, answer) %}
+<div class="faq-item">
+    <div class="faq-question">
+        <h3>{{ question }}</h3>
+        <span class="faq-toggle">+</span>
+    </div>
+    <div class="faq-answer">
+        <p>{{ answer }}</p>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro partner_card(image_url, name, description, website_url="#") %}
+<div class="partner-card">
+    <div class="partner-logo">
+        <img src="{{ image_url }}" alt="{{ name }} logo">
+    </div>
+    <div class="partner-info">
+        <h3>{{ name }}</h3>
+        <p>{{ description }}</p>
+        <a href="{{ website_url }}" class="partner-link" target="_blank">Visit website</a>
+    </div>
+</div>
+{% endmacro %}
+
+{% macro interactive_timeline(timeline_items) %}
+<div class="timeline-container">
+    <div class="timeline-track">
+        {% for item in timeline_items %}
+        <div class="timeline-node" data-step="{{ loop.index }}">
+            <div class="timeline-dot" style="border-color: {{ item.color }}"></div>
+            <div class="timeline-icon" style="background-color: {{ item.color }}">
+                <span class="timeline-icon-inner">{{ item.icon|safe }}</span>
+            </div>
+            <div class="timeline-content">
+                <h3>{{ item.title }}</h3>
+                <div class="timeline-details">
+                    {{ item.content|safe }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <div class="timeline-line"></div>
+    </div>
+</div>
+{% endmacro %} 

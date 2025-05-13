@@ -1,0 +1,79 @@
+/* Hero section */
+.hero {
+    padding: 40px 0;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.university {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.hero-image {
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Program Info Section */
+.program-info {
+    padding: 20px 0;
+}
+
+.program-info h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.program-info p {
+    margin-bottom: 15px;
+    max-width: 800px;
+}
+
+/* Student Projects Section */
+.student-projects {
+    padding: 20px 0;
+}
+
+.student-projects h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 20px 0;
+}
+
+.testimonials h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Partnerships Section */
+.partnerships {
+    padding: 20px 0;
+}
+
+.partnerships h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+} 

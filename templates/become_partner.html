@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% from "components/macros.html" import faq_item, promotional_card, interactive_timeline %}
+
+{% block title %}Become a Partner - CSSci Program{% endblock %}
+
+{% block content %}
+<section class="partner-section">
+    <h1>Become a Partner</h1>
+    
+    <div class="partnership-container">
+        <div class="partnership-image">
+            <img src="https://placehold.co/400x300?text=Partnership+Puzzle" alt="Partnership puzzle pieces">
+        </div>
+        
+        <div class="partnership-text">
+            <div class="partnership-info">
+                <p>Text on what Partnership entails</p>
+                <p>Benefits, requirements, impact</p>
+            </div>
+            
+            <a href="{{ url_for('contact') }}" class="btn btn-dark">Contact us!</a>
+        </div>
+    </div>
+    
+    <div class="partnership-description">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies, turpis ac laoreet facilisis, massa libero ullamcorper metus, facilisis ultricies risus purus eget sem. Sed vel maximus orci, id porttitor libero. Quisque in magna consectetur, blandit massa in, ultricies turpis. Nullam porta sem hendrerit sem hendrerit, maximus porttitor nisl mollis. Nulla ultricies sit amet ligula vel varius. Curabitur quis lacus pretium sem euismod congue.</p>
+    </div>
+</section>
+
+<section class="timeline-section">
+    <h2>Partnership Journey</h2>
+    {% set timeline_items = [
+        {
+            'title': 'Initial Contact',
+            'content': '<p>General information</p>',
+            'icon': '<i class="fas fa-handshake"></i>',
+            'color': '#9b7cee'
+        },
+        {
+            'title': 'Project Definition',
+            'content': '<p>General information</p>',
+            'icon': '<i class="fas fa-tasks"></i>',
+            'color': '#7c85ee'
+        },
+        {
+            'title': 'Student Collaboration',
+            'content': '<p>General information</p>',
+            'icon': '<i class="fas fa-users"></i>',
+            'color': '#30b0cb'
+        },
+        {
+            'title': 'Project Handover',
+            'content': '<p>General information</p>',
+            'icon': '<i class="fas fa-flag-checkered"></i>',
+            'color': '#23c1c1'
+        }
+    ] %}
+    
+    {{ interactive_timeline(timeline_items) }}
+</section>
+
+<section class="faq-section">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+        {{ faq_item(
+            "What do partners have to do?",
+            "FAQ response"
+        ) }}
+        
+        {{ faq_item(
+            "How much time commitment is required?",
+            "FAQ response"
+        ) }}
+        
+        {{ faq_item(
+            "How is privacy and data storage handled?",
+            "FAQ response"
+        ) }}
+        
+        {{ faq_item(
+            "Are there Dutch-speaking students available?",
+            "FAQ response"
+        ) }}
+        
+        {{ faq_item(
+            "What types of organizations can become partners?",
+            "FAQ response"
+        ) }}
+    </div>
+</section>
+
+<section class="promo-section">
+    <h2>Promotional material</h2>
+    <div class="promo-grid">
+        {{ promotional_card(
+            "https://placehold.co/400x300?text=Materials+1",
+            "General information",
+            "Information on program and basic info on role of partnerships"
+        ) }}
+        
+        {{ promotional_card(
+            "https://placehold.co/400x300?text=Materials+2",
+            "Flyer",
+            "This is a short description of the material"
+        ) }}
+        
+        {{ promotional_card(
+            "https://placehold.co/400x300?text=Materials+3",
+            "Onboarding and timeline",
+            "Maybe short survey that accompanies this"
+        ) }}
+    </div>
+</section>
+{% endblock %}
+
+{% block scripts %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // FAQ toggle functionality
+    const faqItems = document.querySelectorAll('.faq-question');
+    
+    faqItems.forEach(item => {
+        item.addEventListener('click', function() {
+            const parent = this.parentNode;
+            parent.classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    });
+    
+    // Timeline functionality
+    const timelineNodes = document.querySelectorAll('.timeline-node');
+    
+    timelineNodes.forEach(node => {
+        node.querySelector('.timeline-icon').addEventListener('click', function() {
+            // Remove active class from all nodes
+            timelineNodes.forEach(n => n.classList.remove('active'));
+            
+            // Add active class to the clicked node
+            node.classList.add('active');
+        });
+    });
+});
+</script>
+{% endblock %} 
