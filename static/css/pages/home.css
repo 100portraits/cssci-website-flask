@@ -24,9 +24,11 @@
 }
 
 .hero-image img {
-    width: 50%;
+    width: 100%;
+    max-width: 768px;
     height: auto;
     display: block;
+
 }
 
 /* Program Info Section */

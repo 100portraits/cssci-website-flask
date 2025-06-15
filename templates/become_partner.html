@@ -33,34 +33,248 @@
 <section class="timeline-section">
     <h2>Timeline of project-related events</h2>
     <p>Take a look at events and outputs by semester</p>
-    {% set timeline_items = [
-        {
-            'title': 'Initial Contact',
-            'content': '<p>General information</p>',
-            'icon': '<i class="fas fa-handshake"></i>',
-            'color': '#9b7cee'
-        },
-        {
-            'title': 'Project Definition',
-            'content': '<p>General information</p>',
-            'icon': '<i class="fas fa-tasks"></i>',
-            'color': '#7c85ee'
-        },
-        {
-            'title': 'Student Collaboration',
-            'content': '<p>General information</p>',
-            'icon': '<i class="fas fa-users"></i>',
-            'color': '#30b0cb'
-        },
-        {
-            'title': 'Project Handover',
-            'content': '<p>General information</p>',
-            'icon': '<i class="fas fa-flag-checkered"></i>',
-            'color': '#23c1c1'
-        }
-    ] %}
+
     
-    {{ interactive_timeline(timeline_items) }}
+    <!-- Semester Selection Buttons -->
+    <div class="semester-buttons">
+        <button class="semester-btn active" data-semester="1">Semester 1</button>
+        <button class="semester-btn" data-semester="2">Semester 2</button>
+        <button class="semester-btn" data-semester="3">Semester 3</button>
+        <button class="semester-btn" data-semester="6">Semester 6 'Capstone'</button>
+    </div>
+
+    <!-- Timeline Container -->
+    <div class="timeline-container">
+        <!-- Semester 1 Timeline -->
+        <div class="timeline active" id="timeline-1">
+            <div class="timeline-header">
+                <div class="timeline-badge challenge">CHALLENGE: INFOGRAPHIC</div>
+                <div class="timeline-badge topic">TOPIC: CLIMATE CHANGE</div>
+                <div class="timeline-badge length">PROJECT LENGTH: 8 WEEKS</div>
+            </div>
+            
+            <div class="timeline-months">
+                <span>June → August</span>
+                <span>September</span>
+                <span>October</span>
+                <span>November</span>
+            </div>
+            
+            <div class="timeline-track">
+                <div class="timeline-phase onboarding" data-phase="onboarding-1">
+                    <div class="phase-header">ONBOARDING & CHALLENGE DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="connecting-team">Connecting with our team</div>
+                        <div class="phase-item" data-modal="developing-challenge">Developing a challenge for student projects</div>
+                        <div class="phase-item" data-modal="revising-challenge">Revising the challenge in collaboration with academic liaison</div>
+                        <div class="phase-item" data-modal="upload-challenge">Upload the challenge to Masterchallenge.com</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-begins" data-phase="project-begins-1">
+                    <div class="phase-header">PROJECT BEGINS</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="project-kickoff">Project kickoff on campus in the first week of September including a project pitch</div>
+                        <div class="phase-item" data-modal="matching-process">Matching process with teams</div>
+                        <div class="phase-item" data-modal="group-assignments">Project group assignments</div>
+                        <div class="phase-item" data-modal="connected-lecturer">Connected with lecturer</div>
+                        <div class="phase-item" data-modal="first-meeting">First meeting with students virtually or on campus</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-development" data-phase="project-development-1">
+                    <div class="phase-header">PROJECT DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="biweekly-checkins">Bi-weekly check-ins with the project team</div>
+                        <div class="phase-item" data-modal="stakeholder-interviews">Students conduct stakeholder interviews</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase final-stage" data-phase="final-stage-1">
+                    <div class="phase-header">FINAL STAGE</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="handover-event">Project handover event "Infographic party" on campus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 2 Timeline -->
+        <div class="timeline" id="timeline-2">
+            <div class="timeline-header">
+                <div class="timeline-badge challenge">CHALLENGE: PROTOTYPE FOR CHANGE</div>
+                <div class="timeline-badge topic">TOPIC: BEHAVIOURAL CHANGE</div>
+                <div class="timeline-badge length">PROJECT LENGTH: 16 WEEKS</div>
+            </div>
+            
+            <div class="timeline-months">
+                <span>October → January</span>
+                <span>February</span>
+                <span>March</span>
+                <span>April</span>
+                <span>May</span>
+                <span>June</span>
+            </div>
+            
+            <div class="timeline-track">
+                <div class="timeline-phase onboarding" data-phase="onboarding-2">
+                    <div class="phase-header">ONBOARDING & CHALLENGE DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="connecting-team">Connecting with our team</div>
+                        <div class="phase-item" data-modal="developing-challenge">Developing a challenge for student projects</div>
+                        <div class="phase-item" data-modal="revising-challenge">Revising the challenge in collaboration with academic liaison</div>
+                        <div class="phase-item" data-modal="upload-challenge">Upload the challenge to Masterchallenge.com</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-begins" data-phase="project-begins-2">
+                    <div class="phase-header">PROJECT BEGINS</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="project-kickoff">Project kickoff on campus in the first week of September including a project pitch</div>
+                        <div class="phase-item" data-modal="matching-process">Matching process with teams</div>
+                        <div class="phase-item" data-modal="group-assignments">Project group assignments</div>
+                        <div class="phase-item" data-modal="connected-lecturer">Connected with lecturer</div>
+                        <div class="phase-item" data-modal="first-meeting">First meeting with students virtually or on campus</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-development" data-phase="project-development-2">
+                    <div class="phase-header">PROJECT DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="biweekly-checkins">Bi-weekly check-ins with the project team</div>
+                        <div class="phase-item" data-modal="feedback-session">Feedback session together with students at the end of March</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase final-stage" data-phase="final-stage-2">
+                    <div class="phase-header">FINAL STAGE</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="prototype-handover">Prototype handover event "prototype party" takes place early June</div>
+                        <div class="phase-item" data-modal="project-deliverable">Project deliverable is shared with the partner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 3 Timeline -->
+        <div class="timeline" id="timeline-3">
+            <div class="timeline-header">
+                <div class="timeline-badge challenge">CHALLENGE: SYSTEM CHANGE</div>
+                <div class="timeline-badge topic">TOPIC: HEALTH AND MOBILITY</div>
+                <div class="timeline-badge length">PROJECT LENGTH: 16 WEEKS</div>
+            </div>
+            
+            <div class="timeline-months">
+                <span>June → August</span>
+                <span>September</span>
+                <span>October</span>
+                <span>November</span>
+                <span>December</span>
+                <span>January</span>
+            </div>
+            
+            <div class="timeline-track">
+                <div class="timeline-phase onboarding" data-phase="onboarding-3">
+                    <div class="phase-header">ONBOARDING & CHALLENGE DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="connecting-team">Connecting with our team</div>
+                        <div class="phase-item" data-modal="developing-challenge">Developing a challenge for student projects</div>
+                        <div class="phase-item" data-modal="revising-challenge">Revising the challenge in collaboration with academic liaison</div>
+                        <div class="phase-item" data-modal="upload-challenge">Upload the challenge to Masterchallenge.com</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-begins" data-phase="project-begins-3">
+                    <div class="phase-header">PROJECT BEGINS</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="project-kickoff">Project kickoff on campus in the first week of September including a project pitch</div>
+                        <div class="phase-item" data-modal="matching-process">Matching process with teams</div>
+                        <div class="phase-item" data-modal="group-assignments">Project group assignments</div>
+                        <div class="phase-item" data-modal="connected-lecturer">Connected with lecturer</div>
+                        <div class="phase-item" data-modal="first-meeting">First meeting with students virtually or on campus</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-development" data-phase="project-development-3">
+                    <div class="phase-header">PROJECT DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="biweekly-checkins">Bi-weekly check-ins with the project team</div>
+                        <div class="phase-item" data-modal="handover-dataset">Handover of dataset to students</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase final-stage" data-phase="final-stage-3">
+                    <div class="phase-header">FINAL STAGE</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="handover-event-3">Project handover event on campus happens at the end of January</div>
+                        <div class="phase-item" data-modal="project-deliverable-3">Project deliverable is shared with the partner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Semester 6 Timeline -->
+        <div class="timeline" id="timeline-6">
+            <div class="timeline-header">
+                <div class="timeline-badge challenge">CHALLENGE: GRADUATION THESIS</div>
+                <div class="timeline-badge topic">TOPIC: CLIMATE CHANGE, MOBILITY, HEALTH, SURVEILLANCE, AND BIAS IN AI</div>
+                <div class="timeline-badge length">PROJECT LENGTH: 16 WEEKS</div>
+            </div>
+            
+            <div class="timeline-months">
+                <span>October → January</span>
+                <span>February</span>
+                <span>March</span>
+                <span>April</span>
+                <span>May</span>
+                <span>June</span>
+            </div>
+            
+            <div class="timeline-track">
+                <div class="timeline-phase onboarding" data-phase="onboarding-6">
+                    <div class="phase-header">ONBOARDING & CHALLENGE DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="connecting-team">Connecting with our team</div>
+                        <div class="phase-item" data-modal="developing-challenge">Developing a challenge for student projects</div>
+                        <div class="phase-item" data-modal="revising-challenge">Revising the challenge in collaboration with academic liaison</div>
+                        <div class="phase-item" data-modal="upload-challenge">Upload the challenge to Masterchallenge.com</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-begins" data-phase="project-begins-6">
+                    <div class="phase-header">PROJECT BEGINS</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="project-kickoff">Project kickoff on campus in the first week of September including a project pitch</div>
+                        <div class="phase-item" data-modal="matching-process">Matching process with teams</div>
+                        <div class="phase-item" data-modal="group-assignments">Project group assignments</div>
+                        <div class="phase-item" data-modal="connected-lecturer">Connected with lecturer</div>
+                        <div class="phase-item" data-modal="first-meeting">First meeting with students virtually or on campus</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase project-development" data-phase="project-development-6">
+                    <div class="phase-header">PROJECT DEVELOPMENT</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="biweekly-checkins-6">(bi-)weekly check-ins with the project team</div>
+                        <div class="phase-item" data-modal="prototype-party">Mid-project "prototype party" presentation of progress on campus</div>
+                    </div>
+                </div>
+                
+                <div class="timeline-phase final-stage" data-phase="final-stage-6">
+                    <div class="phase-header">FINAL STAGE</div>
+                    <div class="phase-content">
+                        <div class="phase-item" data-modal="graduation-event">Graduation project presentation event on campus showcasing all graduation students' work</div>
+                        <div class="phase-item" data-modal="project-deliverable-6">Project deliverable is shared with the partner</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="{{ url_for('static', filename='documents/Project Timeline by Semester.pdf') }}" class="download-link" download>
+      <i class="fas fa-download"></i>
+      Download Project Timeline by Semester (PDF)
+  </a>
 </section>
 
 <section class="faq-section">
@@ -131,18 +345,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Timeline functionality
-    const timelineNodes = document.querySelectorAll('.timeline-node');
+    // Timeline semester switching functionality
+    const semesterButtons = document.querySelectorAll('.semester-btn');
+    const timelines = document.querySelectorAll('.timeline');
     
-    timelineNodes.forEach(node => {
-        node.querySelector('.timeline-icon').addEventListener('click', function() {
-            // Remove active class from all nodes
-            timelineNodes.forEach(n => n.classList.remove('active'));
+    semesterButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const semester = this.getAttribute('data-semester');
             
-            // Add active class to the clicked node
-            node.classList.add('active');
+            // Remove active class from all buttons and timelines
+            semesterButtons.forEach(btn => btn.classList.remove('active'));
+            timelines.forEach(timeline => timeline.classList.remove('active'));
+            
+            // Add active class to clicked button and corresponding timeline
+            this.classList.add('active');
+            document.getElementById('timeline-' + semester).classList.add('active');
         });
     });
+    
+    // No modal functionality needed
 });
 </script>
 {% endblock %} 
