@@ -12,33 +12,28 @@
     <div class="resource-container">
         <div class="resource-content">
             <h2>Current students</h2>
-            <p>How to increase your project's visibility</p>
-            <p>How to integrate CSSci work in resume</p>
+            <p>Want to connect more with your peers? Explore upcoming CSSci events!</p>
             <div class="button-group">
-                <a href="#" class="btn btn-dark">Button</a>
-                <a href="#" class="btn btn-secondary">Secondary button</a>
+                <a href="#" class="btn btn-dark">Learn more</a>
             </div>
         </div>
         <div class="resource-image">
-            <img src="https://placehold.co/600x400/444/FFF?text=Students+Working" alt="Current students working on computers">
+            <img src="{{ url_for('static', filename='images/student_resources/img1.jpg') }}" alt="University students working on laptops">
         </div>
     </div>
 </section>
 
 <section class="alumni-section">
     <div class="resource-container reverse">
-        
         <div class="resource-content">
             <h2>Alumni</h2>
-            <p>Job opportunities</p>
-            <p>Networking suggestions</p>
+            <p>Graduated, but want to stay in touch? Join the CSSci alumni community!</p>
             <div class="button-group">
-                <a href="#" class="btn btn-dark">Button</a>
-                <a href="#" class="btn btn-secondary">Secondary button</a>
+                <a href="#" class="btn btn-dark">Learn more</a>
             </div>
         </div>
         <div class="resource-image">
-            <img src="https://placehold.co/600x400/444/FFF?text=Alumni+Students" alt="Alumni students">
+            <img src="{{ url_for('static', filename='images/student_resources/img2.jpg') }}" alt="Smiling woman in academic graduation attire">
         </div>
     </div>
 </section>
@@ -48,17 +43,17 @@
     
     <div class="resources-grid">
         <div class="resource-card large">
-            <img src="https://placehold.co/600x800/ddd/888?text=Pears" alt="Pears">
+            <img src="{{ url_for('static', filename='images/student_resources/img3.jpg') }}" alt="Man reviewing resume document">
             <div class="resource-card-content">
                 <h3>Pimp my resume!</h3>
-                <p>Need help visualizing all the wonderful stuff you've been doing in your CV?</p>
+                <p>Want to get started on showcasing all your professional skills and accomplishments?</p>
                 <a href="#" class="learn-more">Learn more</a>
             </div>
         </div>
         
         <div class="resource-cards-column">
             <div class="resource-card small">
-                <img src="https://placehold.co/600x400/ddd/888?text=Pears" alt="Small pears">
+                <img src="{{ url_for('static', filename='images/student_resources/img4.jpg') }}" alt="Person holding a job opportunity sign">
                 <div class="resource-card-content">
                     <h3>Job opportunities</h3>
                     <p>Career paths and job tips</p>
@@ -67,10 +62,10 @@
             </div>
             
             <div class="resource-card small">
-                <img src="https://placehold.co/600x400/ddd/888?text=Mushrooms" alt="Mushrooms">
+                <img src="{{ url_for('static', filename='images/student_resources/img5.jpg') }}" alt="Illuminated ferris wheel at night">
                 <div class="resource-card-content">
                     <h3>Increase your visibility</h3>
-                    <p>Details more about visibility, networking, and stuff</p>
+                    <p>Want to really make a wave? Here are some ideas to spread the word!</p>
                     <a href="#" class="learn-more">Learn more</a>
                 </div>
             </div>

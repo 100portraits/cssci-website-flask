@@ -1,0 +1,110 @@
+# Home
+
+## Add:
+Image: https://unsplash.com/photos/a-man-sitting-in-front-of-a-laptop-computer-rr43D18cKlY
+(Decrease size of image placeholder pls)
+
+## What makes CSSci different?
+Students work directly with industry and academic partners in a project-based learning environment to co-create computational solutions in addressing societal challenges.
+Learn more
+
+## Showcased student projects
+i will ask Emma-Rose for examples...
+
+## Partnerships
+Why Become a Partner?
+What's in it for you? Connections, visibility, and upcoming talent.
+Learn more
+Image: https://unsplash.com/photos/two-hands-_UIVmIBB3JU
+
+Our Partners
+Meet some of the people we"ve been working with.
+Learn more
+Image: https://unsplash.com/photos/a-man-and-a-woman-looking-at-a-laptop-dYfN5RZY1B8
+
+## Testimonials
+i will ask Emma-Rose for examples...
+
+
+
+# About
+
+## Remove: About / What makes us special?
+
+## The Essence of CSSci: Innovation Meets Impact
+ 
+The Bachelor in Computational Social Science (CSSci) at the University of Amsterdam represents a groundbreaking approach to higher education, where traditional academic learning meets real-world problem-solving. Our programme uniquely combines social science theories, empirical research methodologies, and advanced computational techniques to create an environment where students develop practical solutions to society's most pressing challenges. Through our challenge-based learning model, students work directly with industry and academic partners across four distinct projects throughout their three-year journey. This innovative approach not only enriches student learning but also provides partners with fresh perspectives and data-driven solutions to complex problems.
+
+## Remove: one of the image placeholders
+## Add image: https://unsplash.com/photos/woman-using-macbook-pc_HmXZ0e_w
+
+
+# Become a partner
+
+## Image: https://unsplash.com/photos/man-in-blue-dress-shirt-using-macbook-pro-IwrCXP4gCig
+
+## Add:
+Partner Benefits and Project Types
+ 
+Throughout the three year programme, partners have the opportunity to engage with students across various project types, each designed to address different aspects of organisational and societal challenges. From first-year climate change projects focusing on environmental impact analysis to advanced capstone projects tackling complex systemic issues, partners receive tangible benefits at every stage. Our students bring a unique combination of social science insight and technical capability, delivering comprehensive solutions that include digital interventions, data analysis, and strategic recommendations. Partners benefit from fresh perspectives, innovative digital solutions, and access to emerging talent in the computational social science field, all while contributing to the development of future change-makers.
+
+## Also add:
+Getting Involved: A Simple Process
+ 
+Becoming a CSSci partner is a straightforward process designed to create meaningful collaboration while respecting partners' time constraints. Organizations begin by submitting a challenge proposal aligned with our core themes - from climate change to digital inclusion. Our partnership team then works closely with potential partners to refine the challenge, ensuring it aligns with both educational objectives and partner goals. The total time commitment is manageable, requiring only 16-18 hours spread across 18 weeks, including regular check-ins, feedback sessions and our on-campus events. This structured yet flexible approach ensures that both partners and students get the most value from their collaboration while working towards impactful solutions.
+
+## Timeline
+See pdf (sorry, not really sure how to help with this other than sending the pdf, let me know if i can do anything else!)
+
+## FAQ
+i will ask Emma-Rose for text...
+
+## Promo stuff
+please upload the pdf I sent u :)
+Text: Timeline of project-related events
+Take a look at events and outputs by semester
+
+i will ask Emma-Rose for other stuff...
+
+
+## Partners/Projects
+i will ask Emma-Rose for content...
+
+## Past Challenges
+i will ask Emma-Rose for a link...
+Add: Our Master Challenge software helps partners and students come together based on project pitches
+Image: https://unsplash.com/photos/person-using-macbook-pro-on-brown-wooden-table-5EhN4wbfvBc
+
+## Remove: Student Output Repository (until this is built) :P
+
+
+# Student resources
+
+## Current students
+text: Want to connect more with your peers? Explore upcoming CSSci events!
+(maybe just have one button with a "Learn more")
+
+image: https://unsplash.com/photos/two-university-students-sitting-by-desk-in-front-of-laptops-while-scrolling-through-online-information-for-their-project-2AjXrhw8-Z4
+
+## Alumni
+text: Graduated, but want to stay in touch? Join the CSSci alumni community!
+
+image: https://unsplash.com/photos/smiling-woman-wearing-academic-dress-and-black-academic-hat-Ph2KD5qr7VQ
+
+## Professional resources
+### Pimp my resume! 
+remove: Need help visualizing all the wonderful stuff you've been doing in your CV?
+add: Want to get started on showcasing all your professional skills and accomplishments?
+
+image: https://unsplash.com/photos/man-in-white-dress-shirt-holding-white-printer-paper-AWFsw4ZF-Qg
+
+### Job opportunities
+(text is good i think)
+
+image: https://unsplash.com/photos/a-man-holding-a-sign-u7r-VFdvQk8
+
+### Increase your visibility
+remove: Details more about visibility, networking, and stuff
+add: Want to really make a wave? Here are some ideas to spread the word!
+
+image: https://unsplash.com/photos/white-and-black-ferris-wheel-during-night-time-mejVpT4Np6A

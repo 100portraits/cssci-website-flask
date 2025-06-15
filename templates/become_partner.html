@@ -9,13 +9,14 @@
     
     <div class="partnership-container">
         <div class="partnership-image">
-            <img src="https://placehold.co/400x300?text=Partnership+Puzzle" alt="Partnership puzzle pieces">
+            <img src="{{ url_for('static', filename='images/become_partner/img1.jpg') }}" alt="Professional working on laptop">
         </div>
         
         <div class="partnership-text">
             <div class="partnership-info">
-                <p>Text on what Partnership entails</p>
-                <p>Benefits, requirements, impact</p>
+                <h2>Partner Benefits and Project Types</h2>
+                <p>Throughout the three year programme, partners have the opportunity to engage with students across various project types, each designed to address different aspects of organisational and societal challenges. From first-year climate change projects focusing on environmental impact analysis to advanced capstone projects tackling complex systemic issues, partners receive tangible benefits at every stage.</p>
+                <p>Our students bring a unique combination of social science insight and technical capability, delivering comprehensive solutions that include digital interventions, data analysis, and strategic recommendations. Partners benefit from fresh perspectives, innovative digital solutions, and access to emerging talent in the computational social science field, all while contributing to the development of future change-makers.</p>
             </div>
             
             <a href="{{ url_for('contact') }}" class="btn btn-dark">Contact us!</a>
@@ -23,12 +24,15 @@
     </div>
     
     <div class="partnership-description">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ultricies, turpis ac laoreet facilisis, massa libero ullamcorper metus, facilisis ultricies risus purus eget sem. Sed vel maximus orci, id porttitor libero. Quisque in magna consectetur, blandit massa in, ultricies turpis. Nullam porta sem hendrerit sem hendrerit, maximus porttitor nisl mollis. Nulla ultricies sit amet ligula vel varius. Curabitur quis lacus pretium sem euismod congue.</p>
+        <h2>Getting Involved: A Simple Process</h2>
+        <p>Becoming a CSSci partner is a straightforward process designed to create meaningful collaboration while respecting partners' time constraints. Organizations begin by submitting a challenge proposal aligned with our core themes - from climate change to digital inclusion. Our partnership team then works closely with potential partners to refine the challenge, ensuring it aligns with both educational objectives and partner goals.</p>
+        <p>The total time commitment is manageable, requiring only 16-18 hours spread across 18 weeks, including regular check-ins, feedback sessions and our on-campus events. This structured yet flexible approach ensures that both partners and students get the most value from their collaboration while working towards impactful solutions.</p>
     </div>
 </section>
 
 <section class="timeline-section">
-    <h2>Partnership Journey</h2>
+    <h2>Timeline of project-related events</h2>
+    <p>Take a look at events and outputs by semester</p>
     {% set timeline_items = [
         {
             'title': 'Initial Contact',
@@ -69,7 +73,7 @@
         
         {{ faq_item(
             "How much time commitment is required?",
-            "FAQ response"
+            "Partners commit 16-18 hours spread across 18 weeks, including regular check-ins, feedback sessions and on-campus events."
         ) }}
         
         {{ faq_item(
@@ -93,19 +97,19 @@
     <h2>Promotional material</h2>
     <div class="promo-grid">
         {{ promotional_card(
-            "https://placehold.co/400x300?text=Materials+1",
+            url_for('static', filename='images/become_partner/img1.jpg'),
             "General information",
             "Information on program and basic info on role of partnerships"
         ) }}
         
         {{ promotional_card(
-            "https://placehold.co/400x300?text=Materials+2",
+            url_for('static', filename='images/become_partner/img1.jpg'),
             "Flyer",
             "This is a short description of the material"
         ) }}
         
         {{ promotional_card(
-            "https://placehold.co/400x300?text=Materials+3",
+            url_for('static', filename='images/become_partner/img1.jpg'),
             "Onboarding and timeline",
             "Maybe short survey that accompanies this"
         ) }}

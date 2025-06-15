@@ -9,63 +9,63 @@
     
     <div class="partner-list">
         {{ partner_card(
-            "https://placehold.co/300x200/00AA00/FFFFFF?text=Partner+1",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 1",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/0099FF/FFFFFF?text=Partner+2",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 2",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/995511/FFFFFF?text=Partner+3",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 3",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/00AA00/FFFFFF?text=Partner+4",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 4",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/0099FF/FFFFFF?text=Partner+5",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 5",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/995511/FFFFFF?text=Partner+6",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 6",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/00AA00/FFFFFF?text=Partner+7",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 7",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/0099FF/FFFFFF?text=Partner+8",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 8",
             "Short description and link to their website",
             "#"
         ) }}
         
         {{ partner_card(
-            "https://placehold.co/300x200/995511/FFFFFF?text=Partner+9",
+            url_for('static', filename='images/partners/img1.jpg'),
             "Partner 9",
             "Short description and link to their website",
             "#"
@@ -78,29 +78,12 @@
     
     <div class="challenge-container">
         <div class="challenge-content">
-            <h3><a href="#" target="_blank">Link to Master Challenge</a></h3>
-            <p>Short description of what it is and how it works</p>
-            <p>Maybe with enticing image? :)</p>
+            <h3><a href="#" target="_blank">Master Challenge</a></h3>
+            <p>Our Master Challenge software helps partners and students come together based on project pitches</p>
         </div>
         
         <div class="challenge-image">
-            <img src="https://placehold.co/600x400/333333/FFFFFF?text=Challenge+Image" alt="Master Challenge">
-        </div>
-    </div>
-</section>
-
-<section class="repository-section">
-    <h2>Student Output Repository</h2>
-    
-    <div class="repository-container">
-        <div class="repository-content">
-            <h3><a href="#" target="_blank">Link to repo</a></h3>
-            <p>Short description of what it is and how it works</p>
-            <p>Maybe with enticing image? :)</p>
-        </div>
-        
-        <div class="repository-image">
-            <img src="https://placehold.co/600x400/444444/FFFFFF?text=Repository+Image" alt="Student Repository">
+            <img src="{{ url_for('static', filename='images/partners/img1.jpg') }}" alt="Challenge Image">
         </div>
     </div>
 </section>

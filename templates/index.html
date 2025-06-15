@@ -9,14 +9,13 @@
     <p class="university">University of Amsterdam (BSc)</p>
     
     <div class="hero-image">
-        <img src="https://placehold.co/800x400" alt="Students working together on a computer">
+        <img src="{{ url_for('static', filename='images/index/img1.jpg') }}" alt="Student working on laptop">
     </div>
 </section>
 
 <section class="program-info">
     <h2>What makes CSSci different?</h2>
-    <p>Info on program objectives, structure, curriculum, educational strategy, etc.</p>
-    <p>"Data science for public good"; co-creation, prototyping, project-based learning, all this from the partner perspective</p>
+    <p>Students work directly with industry and academic partners in a project-based learning environment to co-create computational solutions in addressing societal challenges.</p>
     
     <a href="/about" class="btn">Learn more</a>
 </section>
@@ -25,66 +24,64 @@
     <h2>Showcased student projects</h2>
     <div class="projects-grid">
         {{ project_card(
-            "https://placehold.co/300x200", 
+            url_for('static', filename='images/index/img1.jpg'), 
             "Project 1, Year 1", 
             "This is a short description of the project"
         ) }}
         
         {{ project_card(
-            "https://placehold.co/300x200", 
+            url_for('static', filename='images/index/img1.jpg'), 
             "Project 1, Year 2", 
             "This is a short description of the project"
         ) }}
         
         {{ project_card(
-            "https://placehold.co/300x200", 
+            url_for('static', filename='images/index/img1.jpg'), 
             "Project 1, Year 3", 
             "This is a short description of the project"
         ) }}
     </div>
 </section>
 
-
 <section class="partnerships">
     <h2>Partnerships</h2>
     <div class="partnerships-grid">
         {{ partnership_item(
-            "https://placehold.co/400x200", 
+            url_for('static', filename='images/index/img2.jpg'), 
             "Why Become a Partner?", 
-            "Short text inviting potential partners", 
+            "What's in it for you? Connections, visibility, and upcoming talent.", 
             "/become-a-partner"
         ) }}
         
         {{ partnership_item(
-            "https://placehold.co/400x200", 
+            url_for('static', filename='images/index/img3.jpg'), 
             "Our Partners", 
-            "Short text with some details on existing partners", 
+            "Meet some of the people we've been working with.", 
             "/partners"
         ) }}
     </div>
 </section>
-
 
 <section class="testimonials">
     <h2>Testimonials</h2>
     <div class="testimonials-grid">
         {{ testimonial_card(
             "A terrific piece of praise",
-            "https://placehold.co/100",
+            url_for('static', filename='images/index/img1.jpg'),
             "Name",
             "Description"
         ) }}
         
         {{ testimonial_card(
             "A fantastic bit of feedback",
-            "https://placehold.co/100",
+            url_for('static', filename='images/index/img1.jpg'),
             "Name",
             "Description"
         ) }}
         
         {{ testimonial_card(
             "A genuinely glowing review",
-            "https://placehold.co/100",
+            url_for('static', filename='images/index/img1.jpg'),
             "Name", 
             "Description"
         ) }}
